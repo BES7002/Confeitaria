@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f8d400;
+  background-color: #f3f2cd;
   color: white;
 }
 
@@ -23,6 +23,8 @@ nav ul {
   list-style: none;
   text-align: center;
   margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul li {
