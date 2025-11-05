@@ -19,9 +19,14 @@ header h1 {
   margin-top: 10px;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+}
 nav ul {
   list-style: none;
   text-align: center;
+  width: 40%;
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
