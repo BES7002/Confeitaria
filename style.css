@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f3f2cd;
+  background-color: #f8d400;
   color: white;
 }
 
@@ -30,4 +30,10 @@ nav ul {
 nav ul li {
   display: inline;
   margin: 0 15;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
