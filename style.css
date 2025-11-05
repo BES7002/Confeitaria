@@ -22,7 +22,6 @@ header h1 {
 nav ul {
   list-style: none;
   text-align: center;
-  width: 50%;
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
