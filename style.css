@@ -11,6 +11,11 @@ body {
 
 header {
   height: 150px;
+  color: white;
+  background-color: #f8d400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1 {
