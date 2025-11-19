@@ -58,3 +58,25 @@ img{
   justify-content: center;
   margin-top: 20px;
 }
+
+.iten-cardapio{
+  display: flex;
+}
+
+.descricao{
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.img-iten{
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #d3af6c;]font-size: 18px;
+}
