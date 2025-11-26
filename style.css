@@ -61,7 +61,7 @@ img{
   margin-top: 20px;
 }
 
-.iten-cardapio{
+.item-cardapio{
   border: 2px solid #ccc;
   border-radius: 5px;
   margin: 20px;
@@ -76,7 +76,7 @@ img{
   color: #555;
 }
 
-.img-iten{
+.img-itenm
   width: 200px;
   height: 250px;
   object-fit: cover;
