@@ -4,15 +4,21 @@ async function criarItemCardapio() {
     try {
         // Fazendo a requisição para obter os dados
         const response = await fetch('https://confeitaria-api-wlky.onrender.com/cardapio');
-        
+        console.log('Resposta da API:', response);  // Log para ver a resposta da API
+
         // Verificando se a resposta foi bem-sucedida
         if (!response.ok) {
             throw new Error('Falha na requisição');
         }
-
-        alert(response)
+        
         // Extraindo os dados do JSON
         const dados = await response.json();
+        console.log('Dados recebidos:', dados);  // Log para ver os dados retornados pela API
+
+        // Verificando se a chave "foto" existe
+        if (!dados.foto || !dados.nome || !dados.descricao || !dados.preco) {
+            throw new Error('Dados esperados não encontrados');
+        }
 
         // Criando o item do cardápio com base nos dados recebidos
         const divItemCardapio = document.createElement('div');
@@ -39,6 +45,9 @@ async function criarItemCardapio() {
 
         // Selecionando o container do cardápio onde os itens serão adicionados
         const divC = document.getElementById('cardapio');
+        if (!divC) {
+            throw new Error('Elemento com id "cardapio" não encontrado');
+        }
 
         // Adicionando os elementos criados ao divItemCardapio
         divItemCardapio.appendChild(h3Titulo);
