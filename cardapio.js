@@ -10,6 +10,7 @@ async function criarItemCardapio() {
             throw new Error('Falha na requisição');
         }
 
+        alert(response)
         // Extraindo os dados do JSON
         const dados = await response.json();
 
